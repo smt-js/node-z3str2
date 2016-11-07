@@ -1,0 +1,28 @@
+{
+  "name": "node-z3str2",
+  "version": "0.0.1",
+  "description": "JS bindings for Z3-str2.",
+  "author": "Dmitry Blotsky <dblotsky@uwaterloo.ca>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dblotsky/node-z3str2"
+  },
+  "scripts": {
+    "test": "npm run lint; npm run style",
+    "style": "./node_modules/.bin/jscs *.js",
+    "lint": "./node_modules/.bin/eslint *.js"
+  },
+  "dependencies": {
+    "q": "^1.4.1",
+    "tmp": "0.0.28"
+  },
+  "devDependencies": {
+    "eslint": "^2.5.3",
+    "jscs": "^2.11.0"
+  },
+  "main": "solver.js",
+  "bin": {
+    "node-z3str2": "./main.js"
+  },
+  "license": "MIT"
+}
